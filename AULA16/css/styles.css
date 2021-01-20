@@ -1,0 +1,52 @@
+.header{
+    background-color: aquamarine;
+}
+
+.section-one{
+    background-color: blueviolet;
+}
+
+.section-two{
+    background-color:salmon;
+}
+
+.section-three{
+    background-color: orange;
+}
+
+.header, .section-one, .section-two,.section-three, .footer{
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: aquamarine;
+
+}
+
+.body{
+background-color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .header {
+      background-color: green;
+    }
+    
+    .section-one {
+      background-color: green;
+    }
+    
+    .section-two {
+      background-color: green;
+    }
+    
+    .section-tree {
+      background-color: green;
+    }
+    
+    .footer {
+      background-color: green;
+    }
+  }
+  

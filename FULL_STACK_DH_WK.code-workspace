@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\PROJETO\\barberhaironline"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
