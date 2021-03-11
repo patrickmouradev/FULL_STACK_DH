@@ -5,8 +5,12 @@ const {Recipe} = require("../models/")
 // 1ª forma que voces podem encontrar de exportar metodos do controller
 module.exports = {
   async index(req, res, next){
-    let recipes = await Recipe.findAll();
-    res.render('recipes', { recipes: recipes, user: req.session.user });
+    let {count: size, rows:recipes} = await Recipe.findAndCountAll({
+      order: ['id'],
+      limit: 10,
+      offset: 0, });
+
+      res.render('recipes', { recipes: recipes, user: req.session.user });
   },
 
   async save(req, res, next){
